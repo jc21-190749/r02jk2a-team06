@@ -18,7 +18,7 @@ public class Kadai03 {
 			 c[k]=a[i];
 			  k = k +1;
 	     for(int r=1;r<a.length;r++) {
-			if(a[i]==a[r]) break;
+			if(a[i]!=a[r]) break;
 			 i=r;
 			}
 
