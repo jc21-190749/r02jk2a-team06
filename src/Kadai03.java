@@ -14,12 +14,12 @@ public class Kadai03 {
 		char[] a= s.toCharArray();
 		Arrays.sort(a);
 		char[] c = new char[26];
-		for(int i=0;i<a.length-1;i++) {
+		for(int i=0;i<a.length-1;) {
 			 c[k]=a[i];
 			  k = k +1;
 	     for(int r=1;r<a.length;r++) {
-			if(c[i]==c[r]) break;
-
+			if(a[i]==a[r]) break;
+			 i=r;
 			}
 
          }
