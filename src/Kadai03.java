@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Kadai03 {
 
@@ -8,7 +9,18 @@ public class Kadai03 {
 	 * @return sの中に入っていた文字
 	 */
 	char[] CharacterList(String s) {
+         s= s.toUpperCase();
+		char[] a= s.toCharArray();
+		Arrays.sort(a);
 		char[] c = new char[26];
-		return c;
+		for(int i=0;i<a.length-1;i++) {
+			for(int r=0;r<a.length-1;i++) {
+				if(c[i]==a[r]) {
+					break;
+	      	}
+			 c[i]=a[r];
+         }
+		}
+       	return c;
+		}
 	}
-}
